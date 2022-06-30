@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'PirataOne';
+  src: url(./Fonts/PirataOne-Regular.ttf);
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Collegiate';
+  src: url(./Fonts/CollegiateFLF.ttf);
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "King";
+  src: url(./Fonts/KIN668.TTF);
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -13,8 +31,131 @@
   }
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url(./Images/abstrait-fond-noir-degrade-qui-air-moderne_68708-430.webp);
+  background-size: cover;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.preloader h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.preloader .loader {
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+.preloader .loader::before {
+  content: '';
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border: 5px solid white;
+  border-color: white transparent white transparent;
+  border-radius: 50%;
+  animation: loader infinite ease-in-out 1s;
+}
+
+@keyframes loader {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.header{
+  background-image: url(./Images/31833467-20200618123637-0-auditcode.jpg);
+  background-size: cover;
+  position: absolute;
+  top:0;
+  width: 100%;
+  
+}
+
+.Images{
+  max-width: 15%;
+  max-height: 15%;
+}
+
+.HeaderLi{
+  font-family: 'King'
+}
+
+.body{
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+  font-size: 1.8rem;
+}
+
+.headerH1{
+  font-family: 'Collegiate';
+  -webkit-text-stroke: 0.01px darkslategrey;
+  color: white;
+}
+
+.techs{
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+  font-size: 1.5rem;
+}
+
+.creations{
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+  font-size: 1.5rem;
+  
+}
+
+.quiSuisJe{
+  margin-top: 15rem;
+  margin-bottom: 20rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  font-family: 'King';
+  animation-duration: 1s;
+  animation-name: slideTop;
+}
+
+@keyframes slideTop{
+  from{
+    margin-top: 100%;
+  }
+  to{
+    margin-top: 15%;
+  }
+}
+
+.quiSuisJeStrongP{
+  font-size: 1.2em;
+}
+
+body{
+  background:url(./Images/degrade-bleu.png);
+  background-size: cover;
+}
+
+
 .App-header {
-  background-color: #282c34;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +177,299 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.navHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+
+.HeaderLi{
+  list-style-type: none;
+  
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 0.4px black;
+  font-size: 1.2em;
+}
+
+.linkF{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.linkC{
+  text-decoration: none;
+  color: black;
+  font-family: 'King';
+  font-size: 1.1em;
+}
+
+.h2Body{
+  font-family: "Collegiate";
+  animation-duration: 3s;
+  animation-name: slideH2;
+
+}
+
+.pBody1{
+  font-family: "King";
+  animation-duration: 3s;
+  animation-name: slidingP;
+  animation-delay: 2s;
+  
+}
+
+.Projet:nth-child(odd){
+  animation-duration: 3s;
+  animation-name: slideOdd;
+}
+
+.Projet:nth-child(even){
+  animation-duration: 3s;
+  animation-name: slideEven;
+}
+
+.scrollP{
+  cursor: pointer;
+}
+
+@keyframes slideOdd{
+  from{
+    margin-right: 100%;
+  }
+  to{
+    margin-right:0%;
+  }
+}
+
+@keyframes slideEven{
+  from{
+    margin-left: 100%;
+  }
+  to{
+    margin-left: 0%;
+  }
+}
+
+@keyframes slidingP{
+  from{
+    margin-left: 100%;
+  }
+  to{
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideH2{
+  from{
+    font-size: 0.1em;
+  }
+  to{
+    font-size: 1.5em;
+  }
+}
+
+.footer{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(rgb(48, 120, 226),rgb(36, 72, 172),rgb(34, 32, 158));
+  max-height: 50%;
+  
+  
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerH2{
+  font-family: 'Collegiate';
+  
+}
+
+.contactSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: black;
+  font-family: 'PirataOne';
+  
+}
+
+.JS{
+  margin-top: 5rem;
+  font-family: 'King';
+  
+  
+}
+
+.React{
+  margin-top: 5rem;
+  font-family: 'King';
+  
+}
+
+.Node{
+  margin-top: 5rem;
+  font-family: 'King';
+  
+}
+
+.Symfony{
+  margin-top: 5rem;
+  font-family: 'King';
+  
+}
+
+.MySQL{
+  margin-top: 5rem;
+  font-family: 'King';
+  
+}
+
+.MongoDB{
+  margin-top: 5rem;
+  font-family: 'King';
+}
+
+.photo-profil{
+  
+  max-width: 15%;
+  max-height: 15%;
+  border-radius: 50%;
+  
+  margin-bottom: 2%;
+}
+
+
+.quiSuisJeSection{
+  display: flex;
+  flex-direction: column;
+}
+
+.quiSuisJeArticle{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.quiSuisJeH3{
+  font-family: 'Collegiate';
+}
+
+.quiSuisJeP{
+  font-family: 'King';
+  display: inline-block;
+}
+
+.NomProjet{
+  font-family: 'Collegiate';
+}
+
+.ProjetP{
+  font-family: 'King';
+}
+
+@media screen and (max-width:750px ) {
+  .contact{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:750px ) {
+  .footer{
+    
+    max-height: 30%;
+    font-size: 0.25em;
+  }
+}
+
+@media screen and (max-width:750px ) {
+  .headerH1{
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width:750px ) {
+  .navHeader{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:450px ) {
+  .navHeader{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:450px ) {
+  .body{
+    font-size: 0.7em;
+  }
+  .Images{
+    max-width: 30%;
+    max-height: 30%;
+  }
+}
+
+@media screen and (max-width:450px ) {
+  .creations{
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width:800px ) {
+  .quiSuisJe{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width:250px ) {
+  .link{
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width:750px ) {
+  .footerH2{
+    font-size: 3em;
+  }
+  .contactSection{
+    font-size: 3em;
+  }
+  .contactSection p{
+    font-size: 0.9em;
+  }
+  
+}
+
+@media screen and (max-width:250px ) {
+  .contactSection p{
+    font-size: 0.7em;
+  }
+}
+
+
+
+
+
