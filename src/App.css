@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'PirataOne';
+  font-family: "PirataOne";
   src: url(./Fonts/PirataOne-Regular.ttf);
-  font-style: normal; 
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Collegiate';
+  font-family: "Collegiate";
   src: url(./Fonts/CollegiateFLF.ttf);
-  font-style: normal; 
+  font-style: normal;
 }
 
 @font-face {
@@ -37,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image:url(./Images/abstrait-fond-noir-degrade-qui-air-moderne_68708-430.webp);
+  background-image: url(./Images/abstrait-fond-noir-degrade-qui-air-moderne_68708-430.webp);
   background-size: cover;
   z-index: 20;
   display: flex;
@@ -49,7 +49,7 @@
 .preloader h1 {
   color: white;
   font-size: 3rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .preloader .loader::before {
-  content: '';
+  content: "";
   width: 80px;
   height: 80px;
   position: absolute;
@@ -73,89 +73,85 @@
 
 @keyframes loader {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-.header{
+.header {
   background-image: url(./Images/31833467-20200618123637-0-auditcode.jpg);
   background-size: cover;
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
-  
 }
 
-.Images{
+.Images {
   max-width: 15%;
   max-height: 15%;
 }
 
-.HeaderLi{
-  font-family: 'King'
+.HeaderLi {
+  font-family: "King";
 }
 
-.body{
+.body {
   margin-top: 15rem;
   margin-bottom: 20rem;
   font-size: 1.8rem;
 }
 
-.headerH1{
-  font-family: 'Collegiate';
+.headerH1 {
+  font-family: "Collegiate";
   -webkit-text-stroke: 0.01px darkslategrey;
   color: white;
 }
 
-.techs{
+.techs {
   margin-top: 15rem;
   margin-bottom: 20rem;
   font-size: 1.5rem;
 }
 
-.creations{
+.creations {
   margin-top: 15rem;
   margin-bottom: 20rem;
   font-size: 1.5rem;
-  
 }
 
-.quiSuisJe{
+.quiSuisJe {
   margin-top: 15rem;
   margin-bottom: 20rem;
   font-size: 1.5rem;
   display: inline-block;
   text-align: center;
-  font-family: 'King';
+  font-family: "King";
   animation-duration: 1s;
   animation-name: slideTop;
 }
 
-@keyframes slideTop{
-  from{
+@keyframes slideTop {
+  from {
     margin-top: 100%;
   }
-  to{
+  to {
     margin-top: 15%;
   }
 }
 
-.quiSuisJeStrongP{
+.quiSuisJeStrongP {
   font-size: 1.2em;
 }
 
-body{
-  background:url(./Images/degrade-bleu.png);
+body {
+  background: url(./Images/degrade-bleu.png);
   background-size: cover;
 }
 
-
 .App-header {
-  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -178,298 +174,281 @@ body{
   }
 }
 
-
-
-.navHeader{
+.navHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-size: 1.5em;
 }
 
-.HeaderLi{
+.HeaderLi {
   list-style-type: none;
-  
 }
 
-.link{
+.link {
   text-decoration: none;
   color: white;
   -webkit-text-stroke: 0.4px black;
   font-size: 1.2em;
 }
 
-.linkF{
+.linkF {
   text-decoration: none;
   color: black;
-  
 }
 
-.linkC{
+.linkC {
   text-decoration: none;
   color: black;
-  font-family: 'King';
+  font-family: "King";
   font-size: 1.1em;
 }
 
-.h2Body{
+.h2Body {
   font-family: "Collegiate";
   animation-duration: 3s;
   animation-name: slideH2;
-
 }
 
-.pBody1{
+.pBody1 {
   font-family: "King";
   animation-duration: 3s;
   animation-name: slidingP;
   animation-delay: 2s;
-  
 }
 
-.Projet:nth-child(odd){
+.Projet:nth-child(odd) {
   animation-duration: 3s;
   animation-name: slideOdd;
 }
 
-.Projet:nth-child(even){
+.Projet:nth-child(even) {
   animation-duration: 3s;
   animation-name: slideEven;
 }
 
-.scrollP{
+.scrollP {
   cursor: pointer;
 }
 
-@keyframes slideOdd{
-  from{
+@keyframes slideOdd {
+  from {
     margin-right: 100%;
   }
-  to{
-    margin-right:0%;
+  to {
+    margin-right: 0%;
   }
 }
 
-@keyframes slideEven{
-  from{
+@keyframes slideEven {
+  from {
     margin-left: 100%;
   }
-  to{
+  to {
     margin-left: 0%;
   }
 }
 
-@keyframes slidingP{
-  from{
+@keyframes slidingP {
+  from {
     margin-left: 100%;
   }
-  to{
+  to {
     margin-left: 0%;
   }
 }
 
-@keyframes slideH2{
-  from{
+@keyframes slideH2 {
+  from {
     font-size: 0.1em;
   }
-  to{
+  to {
     font-size: 1.5em;
   }
 }
 
-.footer{
+.footer {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(rgb(48, 120, 226),rgb(36, 72, 172),rgb(34, 32, 158));
+  background: linear-gradient(
+    rgb(48, 120, 226),
+    rgb(36, 72, 172),
+    rgb(34, 32, 158)
+  );
   max-height: 50%;
-  
-  
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.footerH2{
-  font-family: 'Collegiate';
-  
+.footerH2 {
+  font-family: "Collegiate";
 }
 
-.contactSection{
+.contactSection {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 1.1em;
   text-decoration: none;
   color: black;
-  font-family: 'PirataOne';
-  
+  font-family: "PirataOne";
 }
 
-.JS{
+.JS {
   margin-top: 5rem;
-  font-family: 'King';
-  
-  
+  font-family: "King";
 }
 
-.React{
+.React {
   margin-top: 5rem;
-  font-family: 'King';
-  
+  font-family: "King";
 }
 
-.Node{
+.Tailwind {
   margin-top: 5rem;
-  font-family: 'King';
-  
+  font-family: "King";
 }
 
-.Symfony{
+.Node {
   margin-top: 5rem;
-  font-family: 'King';
-  
+  font-family: "King";
 }
 
-.MySQL{
+.Symfony {
   margin-top: 5rem;
-  font-family: 'King';
-  
+  font-family: "King";
 }
 
-.MongoDB{
+.MySQL {
   margin-top: 5rem;
-  font-family: 'King';
+  font-family: "King";
 }
 
-.photo-profil{
-  
+.MongoDB {
+  margin-top: 5rem;
+  font-family: "King";
+}
+
+.photo-profil {
   max-width: 15%;
   max-height: 15%;
   border-radius: 50%;
-  
+
   margin-bottom: 2%;
 }
 
-
-.quiSuisJeSection{
+.quiSuisJeSection {
   display: flex;
   flex-direction: column;
 }
 
-.quiSuisJeArticle{
+.quiSuisJeArticle {
   display: flex;
   flex-direction: column;
-  
 }
 
-.quiSuisJeH3{
-  font-family: 'Collegiate';
+.quiSuisJeH3 {
+  font-family: "Collegiate";
 }
 
-.quiSuisJeP{
-  font-family: 'King';
+.quiSuisJeP {
+  font-family: "King";
   display: inline-block;
 }
 
-.NomProjet{
-  font-family: 'Collegiate';
+.NomProjet {
+  font-family: "Collegiate";
 }
 
-.ProjetP{
-  font-family: 'King';
+.ProjetP {
+  font-family: "King";
 }
 
-@media screen and (max-width:750px ) {
-  .contact{
+@media screen and (max-width: 750px) {
+  .contact {
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width:750px ) {
-  .footer{
-    
+@media screen and (max-width: 750px) {
+  .footer {
     max-height: 30%;
     font-size: 0.25em;
   }
 }
 
-@media screen and (max-width:750px ) {
-  .headerH1{
+@media screen and (max-width: 750px) {
+  .headerH1 {
     font-size: 1.2em;
   }
 }
 
-@media screen and (max-width:750px ) {
-  .navHeader{
+@media screen and (max-width: 750px) {
+  .navHeader {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width:450px ) {
-  .navHeader{
+@media screen and (max-width: 450px) {
+  .navHeader {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width:450px ) {
-  .body{
+@media screen and (max-width: 450px) {
+  .body {
     font-size: 0.7em;
   }
-  .Images{
+  .Images {
     max-width: 30%;
     max-height: 30%;
   }
 }
 
-@media screen and (max-width:450px ) {
-  .creations{
+@media screen and (max-width: 450px) {
+  .creations {
     font-size: 0.7em;
   }
 }
 
-@media screen and (max-width:800px ) {
-  .quiSuisJe{
+@media screen and (max-width: 800px) {
+  .quiSuisJe {
     font-size: 0.8em;
   }
 }
 
-@media screen and (max-width:250px ) {
-  .link{
+@media screen and (max-width: 250px) {
+  .link {
     font-size: 0.7em;
   }
 }
 
-@media screen and (max-width:750px ) {
-  .footerH2{
+@media screen and (max-width: 750px) {
+  .footerH2 {
     font-size: 3em;
   }
-  .contactSection{
+  .contactSection {
     font-size: 3em;
   }
-  .contactSection p{
+  .contactSection p {
     font-size: 0.9em;
   }
-  
 }
 
-@media screen and (max-width:250px ) {
-  .contactSection p{
+@media screen and (max-width: 250px) {
+  .contactSection p {
     font-size: 0.7em;
   }
 }
-
-
-
-
-
